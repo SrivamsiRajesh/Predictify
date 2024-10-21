@@ -1,0 +1,34 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5DC; /* Main Color */
+    color: #333333; /* Good black font color */
+}
+.title {
+    font-family: 'Playfair Display', serif;
+    color: #333333; /* Secondary Color */
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    color: #333333;
+}
+.highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: #ffcc00;
+    z-index: -1;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+.highlight:hover::after {
+    height: 0.4em;
+    background-color: #ff9900; /* Slightly darker shade on hover */
+}
+.button-primary {
+    background-color: #ffcc00; /* Accent Color */
+    color: #333333; /* Good black font color */
+}

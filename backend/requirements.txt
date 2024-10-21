@@ -1,0 +1,6 @@
+Flask
+tensorflow
+polygon-api-client
+pandas
+numpy
+scikit-learn
